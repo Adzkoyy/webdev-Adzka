@@ -1,0 +1,25 @@
+.box-R{
+    background-color: red;
+    width: fit-content;
+}
+
+.box-Y{
+    background-color: yellow;
+    width: fit-content;
+}
+
+.box-G{
+    background-color: green;
+    width: fit-content;
+}
+
+.box-B{
+    background-color: blue;
+    width: fit-content;
+}
+
+.container{
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: row;
+}

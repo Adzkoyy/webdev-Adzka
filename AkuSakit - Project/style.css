@@ -1,0 +1,62 @@
+/* Custom App Layout Styling */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .max-w-750 {
+    max-width: 750px;
+  }
+  
+  /* AI Sidebar Split Screen configuration */
+  @media (min-width: 992px) {
+    #ai-chat-sidebar {
+      width: 380px !important;
+      height: 100vh !important;
+      position: relative !important;
+      transform: none !important;
+      visibility: visible !important;
+    }
+  }
+  
+  /* Feature card hover effects */
+  .feature-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, shadow 0.2s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  /* Floating AI Button for mobile viewport */
+  .floating-ai-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 58px;
+    height: 58px;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Chat bubble styling */
+  .chat-message.user {
+    text-align: right;
+  }
+  
+  .chat-message.user .p-3 {
+    background-color: #0d6efd !important;
+    color: white !important;
+    display: inline-block;
+    border-radius: 15px 15px 0px 15px !important;
+  }
+  
+  .chat-message.bot .p-3 {
+    background-color: #ffffff !important;
+    display: inline-block;
+    border-radius: 15px 15px 15px 0px !important;
+  }
